@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section id="about" className="mx-auto grid max-w-4xl gap-8 px-4 py-12 md:grid-cols-[180px_1fr] md:items-center">
       <img
-        src={profile.photo}
+        src={`${import.meta.env.BASE_URL}${profile.photo}`}
         alt=""
         width="180"
         height="180"
