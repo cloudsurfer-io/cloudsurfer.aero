@@ -2,7 +2,7 @@ export const profile = {
   name: 'Martijn Nieuwland',
   title: 'Commercial Pilot — Multi-Engine Turbine',
   location: 'Belgium / EU',
-  photo: '/images/portrait.svg',
+  photo: '/images/portrait.jpg',
   summary:
     'Commercial pilot with broad experience in single-pilot and multi-pilot operations on multi-engine piston and turbine aircraft. Background includes international contract flying, owner-style aircraft care, and safety management responsibilities. Calm, professional, and adaptable, with strong communication skills and experience operating in client-facing and high-expectation environments. Seeking opportunities in European corporate or charter aviation.',
   contact: {
