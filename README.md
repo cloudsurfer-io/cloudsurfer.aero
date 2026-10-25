@@ -25,4 +25,7 @@ cd frontend
 npm run build
 ```
 
-Output: `frontend/dist/` — upload this folder for static hosting (see `docs/gcp-static-hosting.md`).
+Output: `frontend/dist/` — upload for static hosting (see [docs/gcp-static-hosting.md](docs/gcp-static-hosting.md)).
+
+- **`npm run build`** — for **https://cloudsurfer.aero** (asset paths from site root).
+- **`npm run build:gcs`** — only for testing via `https://storage.googleapis.com/cloudsurfer-aero/index.html`.

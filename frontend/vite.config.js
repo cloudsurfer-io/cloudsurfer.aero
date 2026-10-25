@@ -5,12 +5,13 @@ import { defineConfig } from "vite";
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 
-export default defineConfig({
-  base: "/cloudsurfer-aero/",
+export default defineConfig(({ mode }) => ({
+  // `/` for https://cloudsurfer.aero — use `npm run build:gcs` for bucket-URL testing only.
+  base: mode === "gcs" ? "/cloudsurfer-aero/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
       "@": path.join(root, "src"),
     },
   },
-});
+}));

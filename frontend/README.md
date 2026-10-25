@@ -8,4 +8,4 @@ npm install
 npm run dev
 ```
 
-Production files: `npm run build` → `dist/`.
+Production: `npm run build` → `dist/` (custom domain). `npm run build:gcs` only for the `storage.googleapis.com/cloudsurfer-aero/...` test URL. See `../docs/gcp-static-hosting.md`.
