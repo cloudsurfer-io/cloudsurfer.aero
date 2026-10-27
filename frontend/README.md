@@ -8,4 +8,4 @@ npm install
 npm run dev
 ```
 
-Production: `npm run build` → `dist/` (custom domain). `npm run build:gcs` only for the `storage.googleapis.com/cloudsurfer-aero/...` test URL. See `../docs/gcp-static-hosting.md`.
+Production: `npm run build` → `dist/` inside a Docker image (nginx on Cloud Run). See [../docs/gcp-cloud-run.md](../docs/gcp-cloud-run.md).

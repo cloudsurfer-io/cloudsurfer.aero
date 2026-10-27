@@ -7,7 +7,7 @@ const root = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(({ mode }) => ({
   // `/` for https://cloudsurfer.aero — use `npm run build:gcs` for bucket-URL testing only.
-  base: mode === "gcs" ? "/cloudsurfer-aero/" : "/",
+  base: "/",
   plugins: [react()],
   resolve: {
     alias: {

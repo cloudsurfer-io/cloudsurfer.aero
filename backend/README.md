@@ -16,3 +16,13 @@ django-admin startproject config .
 ```
 
 Keep the virtual environment inside `backend/.venv` (do not commit it).
+
+## Production (planned)
+
+Django will run as a **second Cloud Run service** (e.g. `cloudsurfer-api`), not in the same container as the React site.
+
+- **Frontend:** Cloud Run service `cloudsurfer-aero` — image `cloudsurfer-aero/frontend` in Artifact Registry (see [../docs/gcp-cloud-run.md](../docs/gcp-cloud-run.md)).
+- **API:** `cloudsurfer-api` — gunicorn + Django, connected to **Cloud SQL (Postgres)**.
+- **DNS:** `cloudsurfer.aero` → web service; `api.cloudsurfer.aero` → API service (typical pattern).
+
+The React app will call the API with `VITE_API_URL` at build time.
